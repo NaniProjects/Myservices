@@ -1,0 +1,25 @@
+Github steps:
+1. mvn clean install 
+2. Delete un-used folder(.svn,servers,sonarbackup etc.)
+3. Open Git Bash and go to workspace location
+4. git init
+5. git checkout -b Devl(any name)
+6. git add .
+7. git commit -m "initial commit"
+8. git remote add origin git@github.deere.com:ExtendedWarranty/ExtWrnty.git(ssh url from github)
+9. git remote -v
+10.git push origin Devl
+	if no ssh key generated follow below steps and try 10
+	ssh-keygen -t rsa -b 4096 -C "challaboinanaresh@johndeere.com"
+	passphrase : RACF ID
+	copy generated ssh from file in shared drive
+	add ssh in gihub.deere.com under SSH keys (userid and sshkey)
+11. Go to github.deere.com and select Devl
+
+Checkout steps:
+1. create new folder in C:\ and checkout branch code
+2. git clone URL (ssh url from github)
+	It will import all the files
+3. git add . or git add lo
+4. git commit
+5. git push
